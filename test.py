@@ -149,7 +149,7 @@ class SmartComputerPlayer:
         return best
 
 if __name__ == '__main__':
-    o_player = SmartComputerPlayer('X')  # You can replace 'SmartComputerPlayer' with 'RandomComputerPlayer' for a random AI
-    x_player = HumanPlayer()
+    x_player = SmartComputerPlayer('X')  # You can replace 'SmartComputerPlayer' with 'RandomComputerPlayer' for a random AI
+    o_player = HumanPlayer()
     t = TicTacToe()
     play(t, x_player, o_player, print_game=True)
